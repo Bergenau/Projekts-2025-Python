@@ -1,0 +1,26 @@
+body {
+  background-color:#c1ff96;
+}
+p {
+  text-align: center;
+  color: black;
+  font-size:30px;
+}
+h1{
+  text-align: center;
+  color: black;
+  font-size:50px;
+}
+table{
+  background-color:#f60303;
+  color:black;
+  margin-left:auto;
+  margin-right:auto;
+  border:1px solid;
+}
+th{
+   background-color:#f7fe1a;
+}
+td{
+  background-color:#6fc100 ;
+}
