@@ -67,6 +67,9 @@ html, body {
     color: black;
     font-size:30px;
     }
+   p.cits {
+    color: blue;
+   }
 
   h1{
     text-align: center;
