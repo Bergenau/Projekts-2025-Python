@@ -7,42 +7,45 @@ html, body {
       font-family: "Times New Roman", Times, serif;
       }
 
-    .topnav {
+.topnav {
       overflow: hidden;
       background-color: yellow;
       margin-top: 0px;
       margin-left: 200px;
       display: flex;
       justify-content: space-around;
-      position: fixed;
       top: 0;
-     }
+      position: flex;
+      width: calc (100% -200px);
+      
+      }
 
-      .topnav a {
-      flex: 1;
-      display: flex;
-      justify-content: space-around;
-      color: blue;
-      text-decoration: none;
-     }
 
-      .sidebar a {
+
+.sidebar a {
       padding: 10px;
       text-decoration: none;
       font-size: 18px;
       color: black;
       display: block;
       border: 1px;
-      border-style: dotted;
       border-color: red;
-      } 
+      background-color:red;
+      color:black;
+      }
+.topnav a:hover {
+      flex: none;
+      display: fixed;
+      justify-content: center;
+      color: blue;
+      text-decoration: none;
+  
+      }
+.topnav a.active{
+      background-color: yellow;
+     }
 
-    .topnav a: hover {
-     background-color:red;
-     color:black;
-    }
-
-    .sidebar {
+.sidebar {
     height:100%;
     width: 200px;
     position: fixed;
@@ -60,15 +63,28 @@ html, body {
     margin-right: 100px;
     background-color: green;
     margin-top: 30px;
-}
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    }
+  footer {
+    background-color: red;
+    margin-left: 200px;
+    padding-left: 25px;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    width: 100%; 
+    margin-right: (100% -200px);
+  }
 
   p {
     text-align: center;
     color: black;
     font-size:30px;
     }
-   p.cits {
-    color: blue;
+   .cits {
+    text-align: center;
+    color: black;
    }
 
   h1{
@@ -86,18 +102,52 @@ html, body {
     }
 
   th{
-     background-color:#f7fe1a;
+     background-color:#f7fe1a; 
     }
 
   td{
-    background-color:#6fc100 ;
+    background-color:#6fc100 ; 
     }
-#tabula{
-  background-color:orange; 
+
+  tr:nth-child(even) {
+   background-color: red;
+  }
+  #tabula {
+  background-color: orange;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px 12px lightblue;
+  }
+  #tabula ul {
+  list-style-type: square;
+  padding-left: 50px;
+  }
+  #tabula li .cits {
+  color: green;
+  font-size: 20px;
+  text-align: left;
+  }
+
+#tabula a {
+  display: inline-block;
 }
-#saturs{
-  background-color:yellow; 
-}
-#canva{
-  background-color:blue; 
+
+  #saturs {
+  background-color: yellow;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px 12px lightblue;
+  } 
+
+  #saturs p.cits  {
+  color: #051cde;
+  margin: 20px;
+  }
+  #saturs img {
+  display: block; 
+  border-radius: 20px;
+  }
+     
+  #canva{
+  background-color:blue;
+  border-radius: 20px;
+    box-shadow: 10px 10px 5px 12px lightblue;
 }
