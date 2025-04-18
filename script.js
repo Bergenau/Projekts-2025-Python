@@ -1,5 +1,6 @@
 window.onload= function() {
   zimetuzcanva();
+  none alert("Rītdien Oranžais Brīdinājums, sola negaisu ar krusu");
 }
 
 function zimetuzcanva() {
@@ -44,5 +45,5 @@ function taisnsturis() {
   konteksts.fillRect(10, 10, 200, 200);// 10, 10 xy asis, 150/200 izmērs
 
   konteksts.strokeStyle = "black";
-  konteksts.stroke();
+  konteksts.stroke(); //
 }
